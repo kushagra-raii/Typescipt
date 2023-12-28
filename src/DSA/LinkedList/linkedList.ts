@@ -6,8 +6,8 @@ class Node<T> {
     this.next = null;
   }
 }
-class List<T> {
-  private head: Node<T> | null;
+export class List<T> {
+  head: Node<T> | null;
 
   constructor() {
     this.head = null;
@@ -105,23 +105,5 @@ class List<T> {
   }
 }
 
-const newList = new List<string>();
 
-newList.insertAtBegin("Kushagra");
-newList.insertAtBegin("mahendra");
-newList.insertAtBegin("kaushal");
-newList.insertAtBegin("karan");
-newList.insertAtBegin("johan");
-newList.insertAtEnd("jatin");
 
-newList.print();
-newList.deleteAtBegin();
-newList.deleteAtEnd();
-console.log(``);
-
-newList.print();
-console.log(``);
-newList.reverse();
-newList.print();
-
-export {};
