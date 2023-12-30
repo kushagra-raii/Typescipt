@@ -6,26 +6,24 @@ export class StackList<T> {
     this.stack = new List<T>();
   }
 
-  push(value:T){
+  push(value: T) {
     this.stack.insertAtBegin(value);
   }
 
-  pop():T|undefined{
-    if(!this.stack.head){
-        console.log("Stack is Empty");
-        return undefined;
+  pop(): T | undefined {
+    if (!this.stack.head) {
+      console.log("Stack is Empty");
+      return undefined;
     }
     const value = this.stack.head.data;
     this.stack.deleteAtBegin();
     return value;
   }
-  peek():T|undefined{
-    if(!this.stack.head){
-        console.log("Stack is Empty");
-        return undefined;
+  peek(): T | undefined {
+    if (!this.stack.head) {
+      console.log("Stack is Empty");
+      return undefined;
     }
     return this.stack.head.data;
   }
 }
-
-

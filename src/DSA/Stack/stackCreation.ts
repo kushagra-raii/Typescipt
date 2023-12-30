@@ -11,7 +11,6 @@ console.log(stack.pop());
 console.log(stack.peek());
 console.log(stack.pop());
 
-
 const stack2 = new StackArray<number>();
 stack2.push(15);
 stack2.push(16);

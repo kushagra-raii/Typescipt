@@ -14,7 +14,7 @@ function optimal(n: number) {
   let count = 0;
   for (let i = 0; i * i <= n; i++) {
     if (n % i === 0) {
-      if (n/i !== i) {
+      if (n / i !== i) {
         count += 2;
       } else count++;
     }
